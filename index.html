@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAPPY is the ML-powered fintech platform that optimizes equity portfolios with AI-driven insights, automated rebalancing, and tailored risk management.">
+    <meta name="keywords" content="CAPPY, fintech, portfolio optimization, machine learning, AI investing, equity portfolio, financial technology">
+    <meta name="author" content="CAPPY">
+    <title>CAPPY | ML-Powered Equity Portfolio Optimization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-b7jc4A8Gq8Jt3s7GVoYtL6vhfVqlhK/SXxPxq8np5xpoE2mR7BncpsbR9f7DmqDveoxW48UUcFzNq6cJX9Zs2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <a href="#" class="logo" aria-label="CAPPY Home">
+                <span class="logo-mark">C</span>
+                <span class="logo-text">CAPPY</span>
+            </a>
+            <nav class="main-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#metrics">Performance</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a class="btn tertiary" href="#newsletter">Whitepaper</a>
+                <a class="btn primary" href="#cta">Start Your Optimized Portfolio</a>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <nav aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#metrics">Performance</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="btn primary" href="#cta">Get Your Free Analysis</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="cta">
+            <div class="container hero-content">
+                <div class="hero-copy animate__animated animate__fadeInUp" aria-labelledby="hero-heading">
+                    <p class="eyebrow">Machine Learning for Intelligent Wealth</p>
+                    <h1 id="hero-heading">CAPPY transforms market volatility into stable, intelligent growth.</h1>
+                    <p class="subheading">Harness proprietary ML-powered portfolio optimization algorithms that react to market regimes in real-time—delivering resilient performance tailored to your risk profile.</p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#simulation">Get Your Free Analysis</a>
+                        <a class="btn secondary" href="#technology">Learn More About Our Technology</a>
+                    </div>
+                    <div class="trust-indicators" role="list">
+                        <div class="trust-item" role="listitem">
+                            <span class="trust-label">99.4%</span>
+                            <span>Uptime across global exchanges</span>
+                        </div>
+                        <div class="trust-item" role="listitem">
+                            <span class="trust-label">$4.3B</span>
+                            <span>Assets simulated with CAPPY engines</span>
+                        </div>
+                        <div class="trust-item" role="listitem">
+                            <span class="trust-label">SOC 2</span>
+                            <span>Audited security practices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual animate__animated animate__fadeIn" aria-hidden="true">
+                    <canvas id="hero-chart" width="480" height="480"></canvas>
+                    <div class="hero-overlay-card">
+                        <h3>Adaptive Optimization</h3>
+                        <p>Dynamic allocation engine continuously learns from 120+ macro indicators, flagging regime shifts before they hit your portfolio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">Scroll to explore <span class="scroll-indicator"></span></div>
+        </section>
+
+        <section class="problem" id="problem">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Why CAPPY</span>
+                    <h2>Traditional portfolio management wasn't built for today's velocity.</h2>
+                    <p>Outdated models react after markets move. CAPPY blends explainable AI with institutional-grade risk management to deliver agility, discipline, and confidence.</p>
+                </div>
+                <div class="problem-grid">
+                    <article class="card challenge">
+                        <h3>Legacy Challenges</h3>
+                        <ul>
+                            <li>Static asset allocations that ignore regime shifts</li>
+                            <li>Manual rebalancing that lags behind market signals</li>
+                            <li>Fragmented data and opaque risk metrics</li>
+                            <li>Tax drag from inefficient trading heuristics</li>
+                        </ul>
+                    </article>
+                    <article class="card solution">
+                        <h3>CAPPY's ML-Powered Solution</h3>
+                        <ul>
+                            <li>Adaptive models ingesting macro, micro, and alternative data streams</li>
+                            <li>Automated, tax-aware rebalancing tied to probabilistic forecasts</li>
+                            <li>Personalized risk targets enforced by guardrail algorithms</li>
+                            <li>Transparent insights with explainability dashboards</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Platform Features</span>
+                    <h2>Every signal your portfolio needs—automated, precise, proactive.</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>AI-driven Market Intelligence</h3>
+                        <p>Multi-layer ML pipelines parse market depth, news sentiment, factor rotations, and volatility clustering to surface actionable signals.</p>
+                    </article>
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>Autonomous Rebalancing</h3>
+                        <p>Rebalances fire when regime detectors breach thresholds, optimizing taxes and transaction costs to preserve alpha.</p>
+                    </article>
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>Personalized Risk Guardrails</h3>
+                        <p>Dynamic risk budgets adapt to your tolerance, employing scenario stress tests and CVaR constraints to defend capital.</p>
+                    </article>
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>Real-time Insights</h3>
+                        <p>Cross-device dashboards provide live drawdown heatmaps, factor exposure analysis, and anomaly alerts.</p>
+                    </article>
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>Tax-efficient Execution</h3>
+                        <p>Automated tax-loss harvesting and wash-sale aware optimization deliver after-tax performance clarity.</p>
+                    </article>
+                    <article class="feature-card" data-animation="zoom">
+                        <h3>Institutional Backtesting</h3>
+                        <p>Replay two decades of market regimes with Monte Carlo overlays to validate strategies before deploying capital.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">How It Works</span>
+                    <h2>From onboarding to optimization in four intelligent steps.</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <span class="step-number">01</span>
+                        <h3>Profile Calibration</h3>
+                        <p>Connect your accounts, set targets, and calibrate risk using our interactive suitability engine.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">02</span>
+                        <h3>Signal Synthesis</h3>
+                        <p>AI models synthesize macroeconomic shifts, sector rotations, and sentiment signals into cohesive forecasts.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">03</span>
+                        <h3>Optimization & Rebalancing</h3>
+                        <p>Quadratic and reinforcement learning optimizers converge on allocations that maximize Sharpe-to-risk ratios.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">04</span>
+                        <h3>Continuous Monitoring</h3>
+                        <p>Live dashboards, alerts, and explainability modules keep you informed and in control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="metrics" id="metrics">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Performance & Transparency</span>
+                    <h2>See how CAPPY adapts across regimes.</h2>
+                    <p class="disclaimer">Hypothetical backtested performance. Past performance does not guarantee future results. Charts for illustrative purposes only.</p>
+                </div>
+                <div class="metrics-grid">
+                    <div class="chart-card">
+                        <canvas id="performanceChart" aria-label="Hypothetical performance chart" role="img"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <canvas id="regimeChart" aria-label="Market regime allocation chart" role="img"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <canvas id="volatilityChart" aria-label="Volatility response chart" role="img"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="strategies" id="strategies">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Portfolio Showcases</span>
+                    <h2>Tailored strategies for every investor profile.</h2>
+                </div>
+                <div class="strategy-grid">
+                    <article class="strategy-card">
+                        <h3>Aegis Core Shield</h3>
+                        <p class="risk">Risk Level: Conservative</p>
+                        <ul>
+                            <li>5-year annualized return: 6.1%</li>
+                            <li>Max drawdown: -8.4%</li>
+                            <li>Volatility dampener score: 0.72</li>
+                        </ul>
+                    </article>
+                    <article class="strategy-card">
+                        <h3>Flux Momentum Edge</h3>
+                        <p class="risk">Risk Level: Moderate</p>
+                        <ul>
+                            <li>5-year annualized return: 9.8%</li>
+                            <li>Max drawdown: -13.6%</li>
+                            <li>Sharpe ratio: 1.28</li>
+                        </ul>
+                    </article>
+                    <article class="strategy-card">
+                        <h3>Vanguard Aurora</h3>
+                        <p class="risk">Risk Level: Growth</p>
+                        <ul>
+                            <li>5-year annualized return: 13.4%</li>
+                            <li>Max drawdown: -18.1%</li>
+                            <li>Upside capture: 142%</li>
+                        </ul>
+                    </article>
+                    <article class="strategy-card">
+                        <h3>Helix Adaptive Alpha</h3>
+                        <p class="risk">Risk Level: Aggressive</p>
+                        <ul>
+                            <li>5-year annualized return: 17.9%</li>
+                            <li>Max drawdown: -24.5%</li>
+                            <li>Downside deviation control: 1.9%</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive" id="simulation">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Interactive Intelligence</span>
+                    <h2>Experiment with CAPPY's optimization engine.</h2>
+                </div>
+                <div class="interactive-grid">
+                    <div class="interactive-card">
+                        <h3>Portfolio Simulation</h3>
+                        <form id="simulationForm" class="form">
+                            <label for="investmentAmount">Investment Amount ($)</label>
+                            <input type="number" id="investmentAmount" name="investmentAmount" min="1000" step="500" value="50000" required>
+
+                            <label for="riskTolerance">Risk Tolerance</label>
+                            <select id="riskTolerance" name="riskTolerance">
+                                <option value="conservative">Conservative</option>
+                                <option value="balanced" selected>Balanced</option>
+                                <option value="growth">Growth</option>
+                            </select>
+
+                            <label for="timeHorizon">Time Horizon (years)</label>
+                            <input type="number" id="timeHorizon" name="timeHorizon" min="1" max="30" value="10" required>
+
+                            <button type="submit" class="btn primary">Run Simulation</button>
+                        </form>
+                        <div id="simulationResults" class="result-panel" aria-live="polite"></div>
+                    </div>
+                    <div class="interactive-card">
+                        <h3>ROI Comparator</h3>
+                        <form id="roiForm" class="form">
+                            <label for="roiAmount">Initial Investment ($)</label>
+                            <input type="number" id="roiAmount" min="1000" step="1000" value="25000" required>
+
+                            <label for="roiYears">Investment Duration (years)</label>
+                            <input type="number" id="roiYears" min="1" max="20" value="5" required>
+
+                            <button type="submit" class="btn secondary">Compare ROI</button>
+                        </form>
+                        <div id="roiResults" class="result-panel" aria-live="polite"></div>
+                    </div>
+                    <div class="interactive-card">
+                        <h3>Market Response Demo</h3>
+                        <form id="marketForm" class="form">
+                            <label for="marketCondition">Select Market Condition</label>
+                            <select id="marketCondition">
+                                <option value="bull">Bull Market</option>
+                                <option value="bear">Bear Market</option>
+                                <option value="volatile">High Volatility</option>
+                                <option value="sideways">Sideways Drift</option>
+                            </select>
+                        </form>
+                        <div id="marketResponse" class="response-panel">
+                            <p>Select a market condition to see CAPPY's adaptive playbook.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Trusted by Experts</span>
+                    <h2>Validated by finance leaders and innovators.</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial-card">
+                        <p>“CAPPY is the first platform that gave our investment committee real-time explainability on ML decisions. It feels like a co-pilot for the modern CIO.”</p>
+                        <footer>
+                            <span class="name">Amelia Rhodes</span>
+                            <span class="title">Chief Investment Officer, NorthBridge Capital</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>“Their adaptive regime detection has consistently signaled shifts in volatility before our internal models. The alpha preservation is remarkable.”</p>
+                        <footer>
+                            <span class="name">Dr. Ravi Narayanan</span>
+                            <span class="title">Head of Quant Research, Vertex Securities</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>“We ran parallel portfolios for six months. CAPPY’s tax-aware trades alone increased after-tax returns by 180 bps annually.”</p>
+                        <footer>
+                            <span class="name">Jessica Wu</span>
+                            <span class="title">Managing Partner, Meridian Family Office</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="security" id="technology">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Security & Compliance</span>
+                    <h2>Institutional-grade safeguards engineered for trust.</h2>
+                </div>
+                <div class="security-grid">
+                    <article class="security-card">
+                        <h3>Data Protection</h3>
+                        <p>End-to-end encryption, zero-trust architecture, and tokenized account credentials keep client data segmented and protected.</p>
+                    </article>
+                    <article class="security-card">
+                        <h3>Regulatory Alignment</h3>
+                        <p>FINRA & SEC-aligned supervisory controls with automated audit trails and configurable compliance workflows.</p>
+                    </article>
+                    <article class="security-card">
+                        <h3>Operational Resilience</h3>
+                        <p>24/7 monitoring, geo-redundant infrastructure, and dedicated incident response team ensure uninterrupted performance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Pricing</span>
+                    <h2>Flexible plans aligned with your investment scale.</h2>
+                </div>
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <h3>Essentials</h3>
+                        <p class="price">$149<span>/month</span></p>
+                        <ul>
+                            <li>ML signal dashboard</li>
+                            <li>Automated rebalancing (quarterly)</li>
+                            <li>Performance alerts</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a href="#cta" class="btn secondary">Schedule a Demo</a>
+                    </article>
+                    <article class="pricing-card popular">
+                        <div class="badge">Popular</div>
+                        <h3>Professional</h3>
+                        <p class="price">$399<span>/month</span></p>
+                        <ul>
+                            <li>Daily ML signal refresh</li>
+                            <li>Automated tax-aware rebalancing</li>
+                            <li>Custom risk guardrails</li>
+                            <li>Dedicated client strategist</li>
+                        </ul>
+                        <a href="#cta" class="btn primary">Start Your Optimized Portfolio</a>
+                    </article>
+                    <article class="pricing-card">
+                        <h3>Institutional</h3>
+                        <p class="price">Custom</p>
+                        <ul>
+                            <li>Full API integration</li>
+                            <li>Multi-account orchestration</li>
+                            <li>On-premise deployment options</li>
+                            <li>24/7 support</li>
+                        </ul>
+                        <a href="#contact" class="btn tertiary">Talk to Sales</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Your questions, answered with clarity.</h2>
+                </div>
+                <div class="accordion" role="tablist">
+                    <article class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">How does CAPPY's ML differ from traditional quant strategies?</button>
+                        <div class="accordion-panel" hidden>
+                            <p>We combine supervised, unsupervised, and reinforcement learning models to detect structural breaks and adapt allocations. Explainability layers translate model decisions into plain English insights.</p>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">Can I integrate existing brokerage accounts?</button>
+                        <div class="accordion-panel" hidden>
+                            <p>Yes. CAPPY integrates via secure APIs with leading custodians and supports custom connections through our institutional gateway.</p>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">What risk controls are available?</button>
+                        <div class="accordion-panel" hidden>
+                            <p>Clients configure target volatility, drawdown limits, and ESG constraints. Guardrail algorithms enforce compliance with continuous monitoring and escalation workflows.</p>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <button class="accordion-trigger" aria-expanded="false">Is backtested performance audited?</button>
+                        <div class="accordion-panel" hidden>
+                            <p>All backtests follow CFA Institute standards and are reviewed by our independent advisory board. Reports are available for due diligence.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Team</span>
+                    <h2>Engineered by leaders in finance, AI, and security.</h2>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card">
+                        <h3>Elena Martinez</h3>
+                        <p>CEO &amp; Co-founder</p>
+                        <p>Former Managing Director at a top-tier hedge fund with 15 years in systematic equity strategies.</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Jasper Kim, PhD</h3>
+                        <p>Chief Data Scientist</p>
+                        <p>Ex-Google Brain researcher specializing in reinforcement learning for financial time-series.</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Priya Desai</h3>
+                        <p>Chief Security Officer</p>
+                        <p>Led cyber defense at a global bank, architecting zero-trust deployments across regulated environments.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources" id="resources">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Insights</span>
+                    <h2>Stay ahead with CAPPY's market intelligence.</h2>
+                </div>
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <h3>Decoding Market Regimes with Explainable AI</h3>
+                        <p>Learn how CAPPY recognizes and responds to structural breaks before they disrupt portfolios.</p>
+                        <a href="#" class="text-link">Read the article</a>
+                    </article>
+                    <article class="resource-card">
+                        <h3>Tax Alpha in a Volatile Market</h3>
+                        <p>Explore our whitepaper on tax-efficient automation and the impact on net returns.</p>
+                        <a href="#" class="text-link">Download the whitepaper</a>
+                    </article>
+                    <article class="resource-card">
+                        <h3>Building Resilient Equity Strategies</h3>
+                        <p>Discover actionable insights from our latest webinar with industry veterans.</p>
+                        <a href="#" class="text-link">Watch the webinar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Partner with CAPPY</span>
+                    <h2>We are ready to optimize your equity portfolios.</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>Email: <a href="mailto:hello@cappy.ai">hello@cappy.ai</a></li>
+                            <li>Phone: <a href="tel:+12125550123">+1 (212) 555-0123</a></li>
+                            <li>Headquarters: 45 Hudson Yards, New York, NY</li>
+                        </ul>
+                        <div class="contact-cta">
+                            <a class="btn primary" href="#cta">Get Your Free Analysis</a>
+                            <a class="btn secondary" href="#">Schedule a Demo</a>
+                        </div>
+                    </div>
+                    <div class="support-card">
+                        <h3>Support Channels</h3>
+                        <ul>
+                            <li>In-app messaging with 2 minute average response time</li>
+                            <li>Dedicated onboarding specialist</li>
+                            <li>Weekly market intelligence briefings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Subscribe for ML-driven market insights.</h2>
+                    <p>Join thousands of forward-looking investors receiving curated intelligence, strategy playbooks, and exclusive research.</p>
+                    <form class="newsletter-form">
+                        <label for="newsletterEmail" class="sr-only">Email</label>
+                        <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="Enter your email" required>
+                        <button type="submit" class="btn primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-mark">C</span>
+                    <span>CAPPY</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#security">Security</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> CAPPY Technologies Inc. All rights reserved.</p>
+                <p class="disclaimer">CAPPY is a registered investment advisor. This site is for informational purposes only and does not constitute an offer, solicitation, or recommendation to buy or sell any securities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA-MOCK-ID');
+    </script>
+</body>
+</html>
